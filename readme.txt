@@ -3,6 +3,8 @@ easyMTracking
 Demo video:
 Need cuda8.0 and cudnn6.0 , and opencv3.3.0 on win10,
 1.Download video and yolo wieghts:
+  yolo-voc.weights:http://pjreddie.com/media/files/yolo-voc.weights
+  video: http://pan.baidu.com/s/1cwHj6u or other video.
   put video file and weights file into "x64/Release" 
 2. cd  "x64/Release" , and cmd run multi_tracker_yolo_voc_demo.cmd
 
