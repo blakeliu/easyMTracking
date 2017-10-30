@@ -1,7 +1,7 @@
 easyMTracking
 ===================================
 ## Methods:
-  multiple target tracking, only pedestrian tracking was implemented at present!
+  multiple target tracking, only pedestrian tracking was implemented at present!<br />
   Detection by yolov2, calman filter predict motion trajectory, and build assignment problem sovled by Hungarian algorithm .
 
 ### Demo video:
