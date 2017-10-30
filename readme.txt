@@ -1,5 +1,8 @@
 easyMTracking
 
+Methods:
+Detection by yolov2,  calman filter predict motion trajectory, and build assignment problem sovled by Hungarian algorithm .
+
 Demo video:
 Need cuda8.0 and cudnn6.0 , and opencv3.3.0 on win10,
 1.Download video and yolo wieghts:
