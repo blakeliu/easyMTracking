@@ -1,7 +1,8 @@
 easyMTracking
 ===================================
 ## Methods:
-	Detection by yolov2,  calman filter predict motion trajectory, and build assignment problem sovled by Hungarian algorithm .
+  multiple target tracking, only pedestrian tracking was implemented at present!
+  Detection by yolov2, calman filter predict motion trajectory, and build assignment problem sovled by Hungarian algorithm .
 
 ### Demo video:
 	Need cuda8.0 and cudnn6.0 , and opencv3.3.0 on win10,
@@ -28,13 +29,13 @@ easyMTracking
     
     
  ### Build
-	1.Istall win10 cuda8.0,  vs2015, and cudnn6.0
+	1.Istall win10 vs2015, cuda8.0 and cudnn6.0
 	2.Install opencv3.3.0 ,here i used opencv-3.3.0-vc14.zip, link:https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.3.0/opencv-3.3.0-vc14.exe/download
 	3.opencv open_tracker.sln, and build x64 release.
  
  
  
- ### Reference material and project:
+ ### Reference materials and projects:
 	1.Multitarget-tracker,https://github.com/Smorodov/Multitarget-tracker
 	2.Simple Online and Realtime Tracking, https://arxiv.org/abs/1602.00763
 	3.windows yolo https://github.com/unsky/yolo-for-windows-v2
