@@ -11,6 +11,8 @@ Need cuda8.0 and cudnn6.0 , and opencv3.3.0 on win10,
   put video file and weights file into "x64/Release" 
 2. cd  "x64/Release" , and cmd run multi_tracker_yolo_voc_demo.cmd
 
+![img](https://github.com/blakeliu/easyMTracking/blob/master/x64/Release/PETS09-S2L1_test_result_20171030174345.gif)
+
 3. About paramters:
 	"{ t  tracker          |0  | tracker type: 0-video sort kalman, 1- seq sort kalman | }"
 	"{ d  debug           |0  | debug : 0-yes, 1-false | }"
