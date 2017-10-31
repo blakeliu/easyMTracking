@@ -1,5 +1,4 @@
 #include "VideoSortDetector.h"
-#include "SequenceSortDetector.h"
 #include "util\Utils.h"
 
 using namespace easytracker;
@@ -48,10 +47,6 @@ int main(int argc, char** argv) {
 	std::string datasetpath = "D:/datasets/tracking/2DMOT2015/train";
 	std::string seqdetpath = "E:/cv/tracking/mutil-tracking/sort/sort/data";
 
-	
-
-	
-	
 
 	switch (trackerType)
 	{
@@ -67,22 +62,6 @@ int main(int argc, char** argv) {
 		videoSortDetecotDemo.ProcessSequence(inFile, outFile);
 		
 		break; 
-	}
-	case 1:
-	{
-		SeqSortDetector seqSortDetectorDemo(true, false, 0, -1, 30);
-		seqSortDetectorDemo.setDetsPath(seqdetpath);
-		seqSortDetectorDemo.setDebug(debugFlag == 1 ? true : false);
-		seqSortDetectorDemo.setMinTraceSize(minTraceSize);
-		seqSortDetectorDemo.setDetectorType(detectorType);
-		seqSortDetectorDemo.setDetectorParam(netfile, weightfile, objnamefile, filtername);
-
-		for (size_t i = 0; i < sequences.size(); i++)
-		{
-			std::string curseq = datasetpath + "/" + sequences[i];
-			seqSortDetectorDemo.ProcessSequence(curseq, outFile);
-		}
-		break;
 	}
 	default:
 		break;
